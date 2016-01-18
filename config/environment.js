@@ -29,16 +29,22 @@ module.exports = function(environment) {
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ember start application
     ENV.APP.LOG_ACTIVE_GENERATION = true;
     ENV.APP.LOG_TRANSITIONS = true;
     ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
+<<<<<<< HEAD
 =======
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
 >>>>>>> Initial Commit from Ember CLI v1.13.14
+=======
+>>>>>>> ember start application
   }
 
   if (environment === 'test') {
