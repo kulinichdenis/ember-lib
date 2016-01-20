@@ -1,5 +1,6 @@
-<ul>
-	<li>
-		<a>Denis Kulinich</a> 
-	</li>
-</ul>  
+{{ input class="form-control input-lg" type="text" placeholder="Email" value=model.email }}
+{{ textarea class="form-control" placeholder="Your message. (At least 5 characters.)" rows="7" value=model.message }}
+ <button class="btn btn-primary btn-lg btn-block" disabled="{{unless isSuccess 'disabled'}}" {{action 'saveContact' model}}>Request invitation</button>
+{{#if isSuccess}}
+	<h1>cxzczxcxzcz</h1>
+{{/if}}
