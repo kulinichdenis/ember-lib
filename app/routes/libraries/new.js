@@ -5,7 +5,18 @@ export default Ember.Route.extend({
 		return this.store.createRecord('library');
 	},
 
-	actions: {
+  setupController: function (controller, model) {
+    this._super(controller, model);
+
+    controller.set('title', 'Create a new library');
+    controller.set('buttonLabel', 'Create');
+  },
+
+  renderTemplate(controller, model) {
+    this.render('libraries/form');
+  },
+
+  actions: {
     saveLibrary: function (newLibrary) {
       var _that = this;
 
